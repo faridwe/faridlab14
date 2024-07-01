@@ -1,0 +1,23 @@
+public class RentalTest {
+    public static void main(String[] args) {
+        PassengerCar car = new PassengerCar("ABC123", "1HGBH41JXMN109186", "Red", 20000, 6.5, 50, 12000, 4);
+        Truck truck = new Truck("XYZ789", "2HGBH41JXMN109187", "Blue", 50000, 12.0, 200, 50000, 10000);
+        Motorcycle motorcycle = new Motorcycle("MOT456", "3HGBH41JXMN109188", "Black", 10000, 4.5, 20, 5000, false);
+        ConstructionEquipment excavator = new ConstructionEquipment("CON789", "4HGBH41JXMN109189", "Yellow", 100000, 20.0, 500, 3000, 1500);
+
+        car.drive(100);
+        truck.drive(200);
+        motorcycle.drive(50);
+        excavator.drive(30);
+
+        car.refuel(10);
+        truck.refuel(50);
+        motorcycle.refuel(5);
+        excavator.refuel(100);
+
+        System.out.println("Car mileage: " + car.mileage + ", fuel level: " + car.fuelLevel);
+        System.out.println("Truck mileage: " + truck.mileage + ", fuel level: " + truck.fuelLevel);
+        System.out.println("Motorcycle mileage: " + motorcycle.mileage + ", fuel level: " + motorcycle.fuelLevel);
+        System.out.println("Excavator mileage: " + excavator.mileage + ", fuel level: " + excavator.fuelLevel + ", hours worked: " + excavator.hoursWorked);
+    }
+}
